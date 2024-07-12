@@ -8,21 +8,21 @@
 
 #define SAMPT 0b000
 #if SAMPT==0b000
-#define SAMPCHAR "1.17us" //14 * (1/12)us, ans * 128 = 149.3us 
+#define SAMPCHAR "1.17us" //14 * (1/12)us, ans * 127 = 148.6us 
 #elif SAMPT==0b001
-#define SAMPCHAR "1.67us" //20 * (1/12)us, ans * 128 = 213.3us
+#define SAMPCHAR "1.67us" //20 * (1/12)us, ans * 127 = 212.1us
 #elif SAMPT==0b010
-#define SAMPCHAR "2.17us" //26 * (1/12)us, ans * 128 = 277.3us
+#define SAMPCHAR "2.17us" //26 * (1/12)us, ans * 127 = 275.6us
 #elif SAMPT==0b011
-#define SAMPCHAR "3.42us" //41 * (1/12)us, ans * 128 = 437.3us
+#define SAMPCHAR "3.42us" //41 * (1/12)us, ans * 127 = 434.3us
 #elif SAMPT==0b100
-#define SAMPCHAR "4.50us" //54 * (1/12)us, ans * 128 = 576.0us
+#define SAMPCHAR "4.50us" //54 * (1/12)us, ans * 127 = 571.5us
 #elif SAMPT==0b101
-#define SAMPCHAR "5.67us" //68 * (1/12)us, ans * 128 = 725.3us
+#define SAMPCHAR "5.67us" //68 * (1/12)us, ans * 127 = 720.1us
 #elif SAMPT==0b110
-#define SAMPCHAR "7.00us" //84 * (1/12)us, ans * 128 = 896.0us
+#define SAMPCHAR "7.00us" //84 * (1/12)us, ans * 127 = 889.0us
 #elif SAMPT==0b111
-#define SAMPCHAR "21.0us" //252 * (1/12)us, ans * 128 = 2688.0us
+#define SAMPCHAR "21.0us" //252 * (1/12)us, ans * 127 = 2667.0us
 #else
 #define SAMPCHAR "error"
 #endif
