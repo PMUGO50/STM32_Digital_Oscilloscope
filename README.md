@@ -13,6 +13,7 @@ REG 中是对 RCC, GPIO, ADC, DMA 等寄存器的配置，包括
 - 用 Systick 实现的延时程序 timer
 - 软件模拟的 (只写不读) SPI 协议 softspi
 - ADC 和 DMA 的配置 adcor
+- TIM 产生的测试用 PWM 信号 pwm
 
 ## Setting
 
@@ -31,4 +32,4 @@ ADC1 配置了 12 MHz 的时钟，显示屏上将显示 127 个采样点的信�
 |110|7.00|889.0|
 |111|21.0|2667.0|
 
-![](rect.png)
+![](pwmpic.png)

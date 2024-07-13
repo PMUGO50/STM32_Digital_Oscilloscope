@@ -22,8 +22,8 @@ void adc_dma_init(uint16_t* memaddr){
 }
 
 void adc_self_init(){
+	RCC->CFGR |= (0b10 << 14); //clk_adc = clk_apb2 / 6
 	RCC->APB2ENR |= (0b01 << 9); //enable ADC1's clk
-	RCC->CFGR |= (0b10 << 14); //clk_adc = clk_apb2 / 8
 	ADC1->CR1 |= (ADC_MODE | ADC_SCAN);
 	ADC1->CR2 |= (ADC_CONT | ADC_ETRIG | ADC_EXTSEL | ADC_ALIGN | ADC_DMA);
 	ADC1->SQR3 |= ADC_SEQ;

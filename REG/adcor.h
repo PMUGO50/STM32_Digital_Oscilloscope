@@ -29,7 +29,7 @@
 
 #define ADC_IO GPIOA
 #define PIN_ADC 1 //use GPIOA1 as ADC Pin, channel 1
-#define ADCPIN_MODE 0b0000
+#define ADCPIN_MODE 0b0000 //analog input
 #define ADC_NAME ADC1
 #define ADC_MODE (0b0000 << 16) //independent mode, CR1
 #define ADC_SCAN (0b00 << 8) //scan mode, CR1

@@ -8,6 +8,7 @@ int main(){
 	lcd_init();
 	port_disp();
 	adc_init(dmem);
+	pwm_init();
 	while(1);
 	return 0;
 }

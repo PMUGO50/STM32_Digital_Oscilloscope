@@ -9,6 +9,7 @@
 #include "timer.h"
 #include "softspi.h"
 #include "adcor.h"
+#include "pwm.h"
 
 void ledinit();
 void ledswitch();
